@@ -46,11 +46,8 @@ public class JUnitReportServiceExampleTest {
 	}
 	@Test
 	public void testAssertEqualsFalseWithMessage() {
-		ServiceObject newServiceObject = new ServiceObject();
-		junitAssertEqualsServiceSample.postProcessing(serviceObject);
-		assertEquals(
-				"Not the Same Object",
-				newServiceObject,serviceObject);
+junitAssertEqualsServiceSample.processObject(serviceObject);
+		assertEquals(serviceObject,this.serviceObject);
 	}
 
 
