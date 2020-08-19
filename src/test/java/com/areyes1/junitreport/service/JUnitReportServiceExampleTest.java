@@ -47,5 +47,24 @@ public class JUnitReportServiceExampleTest {
 				newServiceObject,serviceObject);
 	}
 
+  @Test
+  public void addTest() {
+	  Assert.assertEquals(1,1);
+  }
 
+  @Test
+  public void diviserTest() {
+	  Assert.assertEquals(1,1);
+  }
+
+  @Test
+  public void produitTest() {
+	  Assert.assertEquals(1,1);
+  }
+
+  @Test
+  public void soustraireTest() {
+	  Assert.assertEquals(1,1);
+  }
+	
 }
