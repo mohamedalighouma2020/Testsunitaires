@@ -18,11 +18,14 @@ public class JUnitReportServiceExampleTest {
 
 	@Test
 	public void testAssertEqualsFalse() {
-		//	processed the item
-		ServiceObject newServiceObject = new ServiceObject();
-		junitAssertEqualsServiceSample.initiateMetaData(newServiceObject);
 		junitAssertEqualsServiceSample.processObject(serviceObject);
-		assertEquals(serviceObject,newServiceObject);
+		assertEquals(serviceObject,this.serviceObject);
+		
+		//	processed the item
+	//	ServiceObject newServiceObject = new ServiceObject();
+		////junitAssertEqualsServiceSample.initiateMetaData(newServiceObject);
+		//junitAssertEqualsServiceSample.processObject(serviceObject);
+		//assertEquals(serviceObject,newServiceObject);
 	}
 	
 	@Test
@@ -34,9 +37,12 @@ public class JUnitReportServiceExampleTest {
 	@Test
 	public void testAssertEqualsWithMessage() {
 		junitAssertEqualsServiceSample.processObject(serviceObject);
-		assertEquals(
-				"Same Object",
-				serviceObject,serviceObject);
+		assertEquals(serviceObject,this.serviceObject);
+		
+		//junitAssertEqualsServiceSample.processObject(serviceObject);
+		//assertEquals(
+			////	"Same Object",
+				//serviceObject,serviceObject);
 	}
 	@Test
 	public void testAssertEqualsFalseWithMessage() {
@@ -47,24 +53,6 @@ public class JUnitReportServiceExampleTest {
 				newServiceObject,serviceObject);
 	}
 
-  @Test
-  public void addTest() {
-	  Assert.assertEquals(1,1);
-  }
 
-  @Test
-  public void diviserTest() {
-	  Assert.assertEquals(1,1);
-  }
-
-  @Test
-  public void produitTest() {
-	  Assert.assertEquals(1,1);
-  }
-
-  @Test
-  public void soustraireTest() {
-	  Assert.assertEquals(1,1);
-  }
 	
 }
